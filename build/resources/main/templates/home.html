@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Getting Started: Serving Web Content</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+    <body>
+        <ul id="list"></ul>
+
+        <script>
+            var evtSource = new EventSource("http://localhost:8080/tickers");
+            var list = document.getElementById("list");
+            evtSource.onmessage = function (event) {
+                var data = JSON.parse(event.data);
+                console.log(data);
+                list.textContent = "Name: " + data.name + ", Price: " + data.price_usd + "$";
+            }
+        </script>
+
+    </body>
+</html>

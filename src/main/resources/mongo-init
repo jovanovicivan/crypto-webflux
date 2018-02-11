@@ -1,0 +1,4 @@
+use crypto
+db.tickers.drop()
+db.createCollection("tickers", {"capped": true, "size" : 100000})
+db.tickers.find()
