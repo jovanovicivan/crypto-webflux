@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/crypto-webflux.iml" filepath="$PROJECT_DIR$/crypto-webflux.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/crypto-webflux_main.iml" filepath="$PROJECT_DIR$/.idea/modules/crypto-webflux_main.iml" group="crypto-webflux" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/crypto-webflux_test.iml" filepath="$PROJECT_DIR$/.idea/modules/crypto-webflux_test.iml" group="crypto-webflux" />
+    </modules>
+  </component>
+</project>
